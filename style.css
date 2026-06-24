@@ -1,0 +1,594 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color:white;
+    font-weight:500;
+}
+html,body{
+    height:100%;
+    width:100%;
+     margin: 0;
+
+}
+#container{
+background-image: linear-gradient(to top, #c71d6f 0%, #d09693 100%);
+    height: 100%;
+     display: flex;
+    background-position: center;
+  background-repeat: no-repeat;
+  flex-direction: column;
+
+    justify-content: center;
+}
+#heading{
+    display: flex;
+   margin-left: 30vw;
+    padding-top: 2vw;
+}
+ 
+   h2{
+    font-size: 3rem;
+    color: yellow;
+    text-decoration-line: underline;
+}
+span{
+    font-size: 2rem;
+    color: cyan;
+    text-decoration-line: underline;
+}
+#arrange{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap:2vw;
+
+}
+#box{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+  flex-wrap: nowrap;
+    align-items: center;
+    gap:5vw;
+    height: 100%; 
+    width: 100%;
+}
+#main{
+    background-color: rgba(255, 255, 255, 0.3);
+     backdrop-filter: blur(8px);
+    width:25vw;
+   max-height:42vw;
+    border-radius: 20px;
+    padding: 2vw;
+    border:3px solid #FDFA35;
+}
+input{
+    width: 75%;
+     border: none;
+     outline:none;
+    height: 3vw;
+    border-radius: 8px;
+    background-color: transparent;
+     text-align: start;
+      font-size: 1.2rem;
+     padding-left: 1vw;
+    
+}
+
+
+input::placeholder{
+    color: white;
+    text-align: start;
+  padding: 0.5vw;
+  
+}
+#search{
+     background-color: transparent;
+     border:2px solid  rgba(255, 255, 255, 0.3);
+     color:white;
+}
+.btn{
+    background-color: transparent;
+    font-size: 1rem;
+    outline: none;
+    border:none;
+    padding:0.3vw;
+}
+img{
+
+    height: 10.5vw;
+  
+    padding-top: 2vh;
+}
+#temp{
+   font-size: 3rem;
+    font-weight: 600;
+}
+#msg{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 1vw;
+}
+.ic{
+    height:3vw;
+}
+#hw{
+    display: flex;
+   justify-content: space-between;
+   padding-top: 3vw;
+   gap:1.5vw;
+}
+#humidity,#wind{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.percent{
+    font-size: 1.3rem;
+    text-align: start;
+}
+
+#qoutes{
+     background-color: rgba(255, 255, 255, 0.3);
+     backdrop-filter: blur(8px);
+      border-radius: 20px;
+    padding: 1vw;
+    height:7.5vw;
+    width:22vw;
+    border:3px solid #0AFFFF;
+}
+.mood{
+    font-size: 1.8rem;
+    text-decoration-line: underline;
+    color:#FDFA35;
+    font-weight: 600;
+}
+#ai{
+    padding-top: 1vw;
+    font-size: 1.2rem;
+}
+#song{
+     background-color: rgba(255, 255, 255, 0.3);
+     backdrop-filter: blur(8px);
+      border-radius: 20px;
+    padding: 1vw;
+    height:16vw;
+    width:31vw;
+    border:3px solid #0AFFFF;
+}
+iframe{
+    width:30vw;
+    padding-top: 0.5vw;
+}
+.hide{
+    display:none;
+}
+
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  #main {
+    width: 30vw;
+    max-height: none;
+    padding: 2vw;
+  }
+
+  #song {
+    width: 38vw;
+    height: auto;
+  }
+
+  #qoutes {
+    width: 30vw;
+    height: auto;
+  }
+
+  iframe {
+    width: 100%;
+    height: 120px;
+  }
+
+  #temp {
+    font-size: 2.8rem;
+  }
+
+  #ai {
+    font-size: 1.1rem;
+  }
+
+  .mood {
+    font-size: 1.6rem;
+    padding-bottom: 1vw;
+  }
+}
+
+@media (max-width: 1100px) {
+  #container {
+    padding: 2vw;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  #heading {
+    margin-left: 0;
+    justify-content: center;
+    padding-bottom: 2vw;
+  }
+
+  h2{
+    font-size: 4rem;
+  }
+
+  span{
+    font-size: 3rem;
+  }
+  #box {
+    flex-direction: column;
+    gap: 6vw;
+    align-items: center;
+  }
+
+  #main {
+    width: 60vw;
+    padding: 3vw 4vw;
+    height:auto;
+  }
+
+  input{
+    height: 5vw;
+    font-size: 2rem;
+  }
+
+  #hw{
+    justify-content: space-around;
+    gap:4vw;
+  }
+
+  #msg{
+    font-size: 2.6rem;
+  }
+  .percent{
+    font-size: 1.3rem;
+  }
+  #song {
+    width: 60vw;
+    padding: 2vw;
+    min-height: 15vw;
+  }
+
+  #qoutes {
+    width: 60vw;
+    padding: 2vw;
+    min-height: 12vw;
+  }
+
+  #ai {
+        font-size: 1.6rem;
+    }
+
+  iframe {
+    width: 100%;
+    height: 100px;
+  }
+
+
+  #temp {
+    font-size: 2.6rem;
+  }
+
+  .ic {
+    height: 3.5vw;
+  }
+
+
+  .percent {
+    font-size: 1.3rem;
+  }
+
+  .mood {
+    font-size: 1.6rem;
+    padding-bottom: 1vw;
+  }
+
+  .btn{
+    font-size: 1.5rem;
+  }
+
+}
+
+
+/* ✅ Mobile Phones (<768px) */
+@media (max-width: 768px) {
+  #container {
+    padding: 1rem;
+  }
+
+  #heading {
+    margin-left: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  h2{
+    font-size: 3rem;
+  }
+
+  span{
+    font-size: 2.5rem;
+  }
+  #box {
+    flex-direction: column;
+    gap: 5vw;
+  }
+
+  #main {
+    width: 70vw;
+    padding: 4vw;
+  }
+
+  input {
+    width: 65%;
+    height: 2.5rem;
+    font-size: 1.6rem;
+  }
+
+  #search {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    justify-content: center;
+    padding: 1vw;
+    align-items: center;
+    height:2rem;
+  }
+
+  #song, #qoutes {
+    width: 70vw;
+    height: auto;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100px;
+  }
+
+  #hw {
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-around;
+  }
+
+  .percent {
+    font-size: 1.3rem;
+  }
+
+  #photo {
+    height: 13vw;
+  }
+
+  .mood {
+    font-size: 1.7rem;
+  }
+
+  #ai {
+    font-size: 1.5rem;
+  }
+  img{
+
+    padding-top: 1vh;
+  }
+
+  #msg{
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 620px) {
+  #container {
+    padding: 1rem;
+    background-size: cover;
+  }
+
+  #heading {
+    margin: 0;
+    justify-content: center;
+    padding-top: 4vw;
+  }
+
+  #search{
+    height:4vw;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  span {
+    font-size: 1.2rem;
+  }
+
+  #box {
+    flex-direction: column;
+    align-items: center;
+    gap: 6vw;
+  }
+
+  #main {
+    width: 70vw;
+    padding: 1rem;
+    max-height: 70vw;
+  }
+  #clear{
+    height: 40vw;
+  }
+
+  input {
+    width: 65%;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+
+    img{
+        height:12.5vw;
+    }
+
+  #temp {
+    font-size: 2.2rem;
+  }
+
+  #msg {
+    font-size: 1.4rem;
+  }
+
+  .ic {
+    height: 6vw;
+  }
+
+  #hw {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #humidity, #wind {
+    justify-content: center;
+  }
+
+  #song,
+  #qoutes {
+    width: 80vw;
+    height: auto;
+  }
+
+  iframe {
+    width: 100%;
+    height: 80px;
+  }
+
+  .mood {
+    font-size: 1.5rem;
+  }
+
+  #ai {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 470px) {
+  #heading {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding-top: 4vw;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  span {
+    font-size: 1.55rem;
+    display: block;
+  }
+
+  #main {
+    width: 75vw;
+    padding: 1rem;
+    max-height: none;
+  }
+
+  #clear{
+    height:68vw;
+  }
+
+  #search{
+    height: 5vw;
+  }
+
+  input {
+    width: 60%;
+    height: 2.2rem;
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+
+  #temp {
+    font-size: 1.8rem;
+  }
+
+  #msg {
+    font-size: 1.6rem;
+    padding-top: 0.5rem;
+  }
+
+  .ic {
+    height: 8vw;
+  }
+
+  #hw {
+    flex-direction: row;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  #humidity, #wind {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .percent {
+    font-size: 1.1rem;
+  }
+
+  #song,
+  #qoutes {
+    width: 75vw;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .mood {
+    font-size: 1.3rem;
+  }
+
+  #ai {
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+  }
+
+  iframe {
+    width: 100%;
+    height: 80px;
+  }
+   #photo {
+    height: 100px;
+  }
+
+  img {
+    max-height: 30vw;
+  }
+}
+
+@media (max-width:380px){
+
+    #song,
+  #qoutes {
+    width: 85vw;
+    height: auto;
+    padding: 1rem;
+  }
+
+  #container{
+    height:110%;
+  }
+  #clear{
+    height:78vw;
+  }
+}

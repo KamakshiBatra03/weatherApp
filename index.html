@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <div id="container">
+         <div id="heading">
+<h2>SkyTune-<span>tunes based on skys mood</span></h2>
+            </div>
+        <div id="box">
+                 <div id="main">
+                <div id="search">
+                    <button class="btn">
+                        <i  class="fa-solid fa-location-dot" style="color:white"></i>
+                    </button>
+                    <input type="text" placeholder="Enter Location" style="color:white">
+                     <button class="btn" id="btn1">
+                         <i  class="fa-solid fa-magnifying-glass" style="color:white"></i>
+                     </button>
+                </div>
+                <div class="hide">
+                <div id="clear">
+                <div id="picture">
+                    <img id="photo" src="sun cloud.png">
+                </div>
+                <div id="temperature">
+                    <p id="temp">18<sup>°</sup>C</p>
+                </div>
+                <div id="msg">
+                    <p id="cond">broken clouds</p>
+                </div>
+            <div id="hw">
+                <div id="humidity">
+                    <div class="icon">
+                        <img  class="ic" src="humidity.png">
+                    </div>
+                    <div class="percent">
+                        <p  id="humi" style="text-align: start">0%</p>
+                        <p>humidity</p>
+                    </div>
+                </div>
+                <div id="wind">
+                    <div class="icon">
+                        <img class="ic" src="wind.png">
+                    </div>
+                    <div class="percent">
+                           <p id="w" style="text-align: start">0km/h</p>
+                           <p>wind speed</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+            
+            <div id="arrange">
+           <div id="song" class="hide">
+                 <p class="mood">Your Mood Playlist</p>
+                 <div>
+                 <iframe id="spotifyplay" style="border-radius:12px" width="31vw" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" src=""></iframe>
+                 </div>
+            </div>
+            <br>
+              <div id="qoutes" class="hide">
+                    <p class="mood">Your Mood Advice</p>
+                    <p id="ai">its a rainy day</p>
+                </div>
+                </div>
+        </div>
+        </div>
+      
+    </div>
+    <script src="script.js"></script>
+    <script src="mood.js"></script>
+    <script src="song.js"></script>
+</body>
+</html>
