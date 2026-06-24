@@ -66,7 +66,7 @@ let photoupdate=(icon)=>{
 
 let errorphoto=()=>{
     clear.innerHTML=`
-    <img id="data" src="error.png" style="height:16rem; padding-top:5rem">
+    <img id="data" src="images/error.png" style="height:16rem; padding-top:5rem">
     <P style="font-size:1.5rem; color:black;font-weight:500">oops data not found!</P>`;
    
 }
